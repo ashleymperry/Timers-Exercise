@@ -1,0 +1,29 @@
+//countdown
+
+function countDown(num){
+    let setTimer = setInterval(function(){
+        num--;
+        if(num <= 0){
+            clearInterval(setTimer);
+            console.log('End');
+    } else {
+        console.log(num);
+            }
+        },1000
+    )}
+
+
+//randomGame
+
+function randomGame(){
+    let num;
+    let turns = 0;
+    let setTimer = setInterval(function(){
+        num = Math.random();
+        turns++;
+        if(num > .75){
+            clearInterval(setTimer);
+            console.log('It took ' + turns + ' turn(s).');
+            }
+        },1000
+    )}
